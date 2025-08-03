@@ -56,7 +56,7 @@ Primary Color: #E48632;
 }
 /* -Link Styling- */
 a {
-    color: #F39C12;
+    color: #EEAF19;
     font-family: Raleway, sans-serif;
 	text-decoration: none;
 }
@@ -65,15 +65,15 @@ a:visited {
     text-decoration: none;
 }
 a:hover {
-    color: #E48632;
+    color: #EEAF19;
 	text-decoration: underline;
 }
 a:active {
-    color: #E48632;
+    color: #EEAF19;
     text-decoration: underline;
 }
 a:focus {
-    color: #E48632;
+    color: #EEAF19;
     text-decoration: none;
 }
 /* -Resets- */
@@ -160,6 +160,12 @@ ul {
 .small-margin {
 	margin-bottom: 3em; /* 48px */
 }
+
+/* About section text styling */
+#about .small-margin {
+	font-size: 1.2rem; /* 19.2px - normalden büyük */
+	line-height: 1.8rem; /* 28.8px - line height da büyütüldü */
+}
 .medium-margin {
 	margin-bottom: 6em; /* 96px */
 }
@@ -170,7 +176,7 @@ ul {
 hr {
     width: 100%;
     height: 2px;
-    background: #E48632;
+    background: #EEAF19;
     margin: 20px 0;
     border: none;
 }
@@ -181,7 +187,7 @@ hr {
 }
 .short-hr-left::after {
     border-top: 2px solid;
-    border-color: #E48632;
+    border-color: #EEAF19;
     content: "";
     display: block;
     height: 1px;
@@ -190,7 +196,7 @@ hr {
 }
 .short-hr-center::after {
     border-top: 2px solid;
-    border-color: #E48632;
+    border-color: #EEAF19;
     content: "";
     display: block;
     height: 1px;
@@ -201,7 +207,7 @@ hr {
 input {
     height: 45px;
     padding-left: 10px;
-    border: 1px solid #D4D4D4 !important;
+    border: 1px solid #EEAF19 !important;
 }
 input:focus {
     border: 1px solid #333;
@@ -224,7 +230,7 @@ button {
     outline: none !important;
 }
 .button {
-	background: #E48632;
+	background: #EEAF19;
     border: none;
     border-radius: 2px;
     color: #FFF;
@@ -410,7 +416,9 @@ button {
 
 /* --------------------------- /////////// V. ABOUT SECTION /////////// --------------------------- */
 #support-image {
-    margin: 0 0 0 20%;
+    margin: -40px 0 0 20%; /* Yukarı taşımak için negatif margin-top */
+    max-width: 80%; /* About.png boyutunu daha da küçült */
+    height: auto; /* Oranı koru */
 }
 /* --------------------------- /////////// VI. GAMES SECTION /////////// --------------------------- */
 .game-tags {
